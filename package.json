@@ -1,0 +1,45 @@
+{
+  "name": "mongoose-ultimate-redis-cache",
+  "version": "1.0.0",
+  "description": "Redis cache for mongoose",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "npx ts-node-dev ./src/index.ts",
+    "build": "npx tsc",
+    "build:start": "npm run build && npm run start",
+    "lint": "npx eslint .",
+    "clear": "rm -rf ./dist && rm -rf ./node_modules && rm ./package-lock.json",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "typescript",
+    "redis",
+    "mongoose",
+    "cache",
+    "mongo",
+    "mongodb"
+  ],
+  "author": "Evandro Araújo <evandroprogram@gmail.com>",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/mongoose": "^5.10.0",
+    "@types/node": "^14.11.5",
+    "@types/redis": "^2.8.28",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "eslint": "^7.11.0",
+    "eslint-config-standard-with-typescript": "^19.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "redis": "^3.0.2"
+  }
+}

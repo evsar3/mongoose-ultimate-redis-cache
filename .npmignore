@@ -1,0 +1,7 @@
+src
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+README.md
+tsconfig.json
